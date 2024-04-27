@@ -1,0 +1,66 @@
+.form {
+  width: 450px;
+  max-width: 100%;
+  margin: 10px auto 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.label {
+  width: 350px;
+  max-width: 90%;
+  margin: 0px 0 10px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--text-color);
+  position: relative;
+  transform: translateX(-10px);
+}
+
+.polices_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  gap: 5px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--text-color);
+  font-weight: bold;
+  margin: 10px 0;
+}
+.button {
+  max-width: 90%;
+  padding: 6px 35px 6px 40px;
+  border-radius: 5px;
+  transition: 0.5s;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: var(--color-third);
+  background-color: var(--color-main);
+  border: 1px solid var(--color-border);
+}
+.button[disabled] {
+  background-color: var(--color-main);
+  color: var(--color-third);
+  border: 1px solid var(--color-border);
+  cursor: not-allowed;
+}
+.link {
+  color: var(--color-third);
+  text-decoration: underline;
+  font-size: 12px;
+}

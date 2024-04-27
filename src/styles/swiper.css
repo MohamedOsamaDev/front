@@ -1,0 +1,23 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex !important;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySwiper .swiper-pagination-bullet {
+    background-color: white !important;
+}
+
+.subjects-swiper .swiper-pagination-bullet {
+    background-color: var(--color-third) !important;
+}
+
+.card-Swiper .swiper-pagination-bullet {
+    background-color: white !important;
+}

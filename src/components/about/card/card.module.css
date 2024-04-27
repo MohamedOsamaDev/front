@@ -1,0 +1,26 @@
+.card {
+    width: 300px;
+    min-height: 100px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 8px;
+    color: var(--color-sec);
+    margin: 10px 0;
+}
+
+.titleBox svg {
+    font-size: 20px;
+    color: var(--color-sec);
+}
+
+.description {
+    font-size: 15px;
+    color: rgb(183, 183, 183);
+}
+
+.titleBox {
+    max-width: 250px;
+}

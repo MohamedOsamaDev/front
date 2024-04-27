@@ -1,0 +1,90 @@
+.form {
+  width: 850px;
+  max-width: 100%;
+  margin: 30px auto 20px;
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  gap: 15px;
+  position: relative;
+  flex-wrap: wrap;
+  padding-right: 5px;
+}
+
+.label {
+  width: 400px;
+  max-width: 90%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: gray;
+}
+
+.label h1 {
+  font-size: 14px;
+}
+
+.polices_box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  gap: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: rgb(160, 160, 160);
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.button {
+  width: 200px;
+  max-width: 90%;
+  padding: 8px 15px 5px 22px;
+  border-radius: 5px;
+  transition: 0.5s;
+  align-items: center;
+
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.4s;
+  margin: auto;
+
+  border: 1px solid transparent;
+  color: var(--color-third);
+  background-color: var(--color-main);
+}
+
+.button:hover {
+  color: var(--color-sec);
+  background-color: var(--color-third);
+}
+.textarea {
+  height: 140px;
+  width: 815px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.textarea textarea {
+  width: 100%;
+  height: 100%;
+}
+
+.fileDesc {
+  color: var(--color-main);
+}
+.fileTitle {
+  color: var(--text-color);
+}

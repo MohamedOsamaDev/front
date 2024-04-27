@@ -1,0 +1,19 @@
+.title {
+  width: 200px;
+  margin: 0px auto 20px;
+  text-align: center;
+  color: var(--color-main);
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+
+.sign_btn {
+  font-size: 14px;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-third);
+  text-decoration: underline;
+}

@@ -1,0 +1,22 @@
+.section {
+  width: 100%;
+  padding-top: 70px;
+  border-radius: 40px;
+  min-height: 50vh;
+  margin: 0px 0 80px;
+  align-items: center;
+}
+
+.title {
+  color: var(--color-main);
+  margin-bottom: 40px;
+}
+
+.wrapperSlider {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}

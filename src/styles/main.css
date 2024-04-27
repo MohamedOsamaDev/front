@@ -1,0 +1,229 @@
+/* normalize styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  /* font-family: sans-serif; */
+  letter-spacing: 1px;
+}
+
+/* start roots styles */
+:root {
+  --color-main: #f7aa00;
+  --color-sec: #ffffff;
+  --color-third: #6c4a00;
+  --color-fourth: #eef6f7;
+  --color-text: black;
+  --color-text-p: rgb(171, 171, 171);
+  --color-background: white;
+  --color-background-overlay: rgb(250, 250, 250);
+  --color-icon: #f7aa00;
+  --color-shadow: #f7a900aa;
+  --color-scroll-thumb: #f7aa00;
+  --color-scroll-track: #eef6f7;
+  --color-border: rgb(238, 238, 238);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-main);
+}
+
+/* end roots styles */
+textarea {
+  resize: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Target the entire scrollbar */
+html::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Style the scrollbar track */
+html::-webkit-scrollbar-track {
+  /* Set the track background color */
+  background: var(--color-scroll-track);
+}
+
+/* Style the scrollbar thumb */
+html::-webkit-scrollbar-thumb {
+  /* Set the thumb background color */
+  background: var(--color-scroll-thumb);
+}
+
+/* start custom classes */
+/* main effect for show pages */
+@keyframes ShowSmoothEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.ShowSmoothEffect {
+  animation: ShowSmoothEffect 0.5s ease-in-out;
+}
+
+/* start buttons */
+.main-btn {
+  text-transform: capitalize;
+  background-color: white;
+  color: #000000;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+/* end buttons */
+
+/* margin for handle spaces  */
+.coverHeader {
+  width: 100%;
+  height: 64px;
+}
+
+/* main effect for images */
+.blurring-image {
+  opacity: 0;
+  filter: blur(5px);
+  /* Initial blur (optional) */
+  transition: filter 0.5s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  /* Smooth transition */
+}
+
+.blurring-image[data-loaded] {
+  opacity: 1;
+  filter: none;
+}
+
+/* main class for images */
+.cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* global classes */
+.section {
+  width: 90%;
+  position: relative;
+  min-height: calc(100vh);
+  margin: 0 auto;
+}
+
+.title {
+  color: rgb(221, 218, 218);
+}
+
+.descrption {
+  line-height: 170%;
+  color: rgb(183, 183, 183);
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 12px 10px;
+  border-radius: 8px;
+  border: 2px solid var(--color-border);
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+  transform: translateX(5px);
+  color: var(--text-color);
+  background-color: var(--color-background-overlay);
+}
+.input-file {
+  text-align: start;
+}
+.input[type="file"]::file-selector-button {
+  color: var(--color-main);
+  background-color: transparent;
+  border: none;
+}
+
+/* start setup dropdowns */
+.dropDown,
+.dropDown-search {
+  border-radius: 8px;
+  border: 2px solid var(--color-border);
+  background-color: var(--color-background-overlay);
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+  transform: translateX(5px);
+  height: 45px;
+  color: var(--text-color);
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.073);
+}
+
+.dropDown[open],
+.dropDown-search[open] {
+  box-shadow: 0px 0px 10px var(--color-shadow);
+}
+
+.input:focus {
+  box-shadow: 0px 0px 10px var(--color-shadow);
+}
+
+.dropDown .options,
+.dropDown-search .options {
+  border-radius: 8px;
+  background-color: var(--color-background-overlay);
+  border: 2px solid var(--color-border);
+  color: var(--text-color);
+}
+
+/* end  setup dropdowns*/
+
+.c-red {
+  color: rgb(245, 59, 59);
+  width: 5px;
+  margin: 0 3px;
+}
+
+/* Change the white to any color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px var(--color-dark) inset !important;
+  -webkit-text-fill-color: var(--text-color) !important;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 55%,
+    var(--color-background) 100%
+  );
+  /* Adjust opacity as needed */
+}
+
+.color-text-p {
+  color: var(--color-text-p);
+}

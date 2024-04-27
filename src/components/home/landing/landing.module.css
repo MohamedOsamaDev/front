@@ -1,0 +1,149 @@
+.section {
+  width: 100%;
+
+  border-radius: 0 0 50px 50px;
+  padding-bottom: 50px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.rightBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 140px 0 0 0;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 725px;
+  max-width: 100%;
+  position: relative;
+}
+
+.title {
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: var(--color-main);
+  text-shadow: 0px 0 2px rgba(2, 10, 14, 0.264);
+}
+
+.sec_title {
+  font-size: 36px;
+  letter-spacing: 2px;
+  color: var(--color-text);
+}
+
+.description {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: rgb(213, 213, 213);
+}
+
+.sec_description {
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: rgb(213, 213, 213);
+}
+
+.boxiconsForLeftBox {
+  margin: 30px 0;
+}
+
+.IconCard {
+  color: var(--color-fourth);
+  color: var(--color-main);
+  background-color: var(--color-background-overlay);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.leftBox {
+  width: 420px;
+  height: 420px;
+  max-width: 100%;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  margin: auto 20px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.poster {
+  width: 100%;
+  height: 100%;
+  /* transform: translateY(15%); */
+}
+
+.posterwrapper {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  border-radius: 20px;
+  left: -15%;
+  top: 45%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+
+@media (max-width: 1367px) {
+  .rightBox {
+    width: 550px;
+  } 
+  .title {
+    font-size: 18px;
+  }
+  .posterwrapper {
+    width: 500px;
+  }
+}
+@media (max-width: 1090px) {
+  .wrapper {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rightBox {
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: 0px 0;
+  }
+
+  .boxiconsForLeftBox {
+    justify-content: center;
+  }
+
+  .poster {
+    display: none;
+  }
+}
+
+@media (max-width: 594px) {
+  .title {
+    font-size: 20px;
+    line-height: 170%;
+  }
+
+  .sec_title {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .sec_description {
+    font-size: 15px;
+  }
+
+  .boxiconsForLeftBox {
+    margin-top: 10px;
+    justify-content: center;
+  }
+}

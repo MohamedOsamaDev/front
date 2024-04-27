@@ -1,0 +1,24 @@
+.title {
+  color: var(--text-color);
+  width: max-content;
+  margin: 0px auto 0;
+}
+
+.poster {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+}
+
+.section {
+  /* transform: translateY(50px); */
+  margin-bottom: 150px;
+}
+
+@media (max-width: 435px) {
+  .title {
+    font-size: 17px;
+    width: fit-content;
+    margin: 0;
+  }
+}
